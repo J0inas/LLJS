@@ -1,0 +1,68 @@
+/* Resetting default margin and padding */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Setting up the body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Subtle gray background */
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333; /* Dark blue header */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Navigation styles */
+  nav {
+    background-color: #555; /* Slightly lighter blue */
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff; /* White links */
+    text-decoration: none;
+  }
+  
+  /* Main content styles */
+  .container {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  h1 {
+    color: #333; /* Dark blue */
+  }
+  
+  p {
+    color: #555; /* Slightly lighter blue */
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333; /* Dark blue footer */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Hover effect */
+  a:hover {
+    color: #aaa; /* Light gray on hover */
+  }
