@@ -11,3 +11,4 @@ All the content will be based on [freeCodeCamp's article](https://www.freecodeca
 A quick look at html and css to understand how the work again.
 
 ### 2. Color Flipper
+A website allowing the user to change the background color to a random color by the click of the button.
