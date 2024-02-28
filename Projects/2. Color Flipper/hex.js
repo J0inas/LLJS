@@ -6,6 +6,8 @@ const color =  document.querySelector(".color");
 button.addEventListener("click", function(){
     const bgColor = getRandomHex();
 
+    document.body.style.backgroundColor = bgColor;
+    color.textContent = bgColor;
 });
 
 function getRandomHex(){
