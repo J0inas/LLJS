@@ -43,5 +43,5 @@ buttons.forEach(function(button){
 
 
 function randomCounterGoal(range){
-    return Math.floor(Math.random() * range) - (range * 2);
+    return Math.floor(Math.random() * range) - (Math.floor(range/2));
 }
