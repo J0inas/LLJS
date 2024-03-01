@@ -1,5 +1,5 @@
 # LLJS
-> **L**et's **L**earn about **J**ava **S**cript, React and TypeScript.
+> **L**et's **L**earn about **J**ava **S**cript, HTML and CSS.
 
 In this project I learn about Front-End Development by practising with
 some projects for beginners.
