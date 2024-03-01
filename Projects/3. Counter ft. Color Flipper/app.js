@@ -1,9 +1,11 @@
 // global count
 let count = 0;
+let goalValue = 0;
 
 // select value and buttons
 // Idea: get all the buttons at once, then loop over each one and do the stuff they need to do
 const value = document.querySelector("#value");
+const goal = document.querySelector("#goal");
 const buttons = document.querySelectorAll(".btn");
 
 buttons.forEach(function(button){
@@ -30,5 +32,16 @@ buttons.forEach(function(button){
             value.style.color = "#222";
         }
         value.textContent = count;
+
+        if(count == goalValue){
+            goalValue = randomCounterGoal(3);
+            console.log(goalValue);
+        }
+        goal.textContent = goalValue;
     })
 });
+
+
+function randomCounterGoal(range){
+    return Math.floor(Math.random() * range) - (range * 2);
+}
