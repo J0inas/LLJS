@@ -10,9 +10,24 @@ buttons.forEach(function(button){
     button.addEventListener("click", function(click){
         // prints exactly which button was clicked and the corresponding class list
         // console.log(click.currentTarget.classList);
-        const buttonClass = click.currentTarget.classList;
-        if (buttonClass.contains("decrease")){
+        const eventObject = click.currentTarget.classList;
+        if (eventObject.contains("decrease")){
             count--;
+        }
+        else if(eventObject.contains("increase")){
+            count ++;
+        }
+        else if(eventObject.contains("reset")){
+            count = 0;
+        }
+        if(count < 0){
+            value.style.color = "red";
+        }
+        else if(count > 0){
+            value.style.color = "green";
+        }
+        else {
+            value.style.color = "#222";
         }
         value.textContent = count;
     })

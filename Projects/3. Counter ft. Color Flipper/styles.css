@@ -175,7 +175,7 @@ main {
 #value {
   font-size: 5rem;
   font-weight: bold;
-  margin: 0.5rem;
+  margin: 1rem;
   transition: var(--transition);
   /* 
     had to kind of hard-code the center position in here
