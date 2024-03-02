@@ -44,5 +44,9 @@ buttons.forEach(function(button){
 
 
 function randomCounterGoal(range){
-    return Math.floor(Math.random() * range) - (Math.floor(range/2));
+    let newCounter = goalValue;
+    while (newCounter === goalValue){
+        newCounter = Math.floor(Math.random() * range) - (Math.floor(range/2));
+    }
+    return newCounter;
 }
