@@ -163,7 +163,7 @@ main {
   place-items: center;
 }
 #value {
-  font-size: 5rem;
+  font-size: 4.3rem;
   font-weight: bold;
   margin: 0.5rem;
   transition: var(--transition);

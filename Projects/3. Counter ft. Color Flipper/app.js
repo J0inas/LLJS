@@ -1,5 +1,7 @@
 // global count
 let count = 0;
+// hex-parts
+const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
 
 // select value and buttons
 // Idea: get all the buttons at once, then loop over each one and do the stuff they need to do
@@ -37,6 +39,9 @@ buttons.forEach(function(button){
         if(count == goalValue){
             goalValue = randomCounterGoal(10);
             console.log(goalValue);
+            const bgColor = getRandomHex();
+            document.body.style.backgroundColor = bgColor;
+            
         }
         goal.textContent = goalValue;
     })
@@ -45,8 +50,23 @@ buttons.forEach(function(button){
 
 function randomCounterGoal(range){
     let newCounter = goalValue;
-    while (newCounter === goalValue){
+    while (newCounter == goalValue){
         newCounter = Math.floor(Math.random() * range) - (Math.floor(range/2));
     }
     return newCounter;
+}
+
+function getRandomHex(){
+    // sequence contains 6 values of hex array
+    let hexSequence = "#";
+    for (let i = 0; i < 6; i++){
+        hexSequence += hex[getRandomHexElement()];
+    }
+    console.log(hexSequence);
+
+    return hexSequence;
+}
+
+function getRandomHexElement(){
+    return Math.floor(Math.random() * hex.length);
 }
